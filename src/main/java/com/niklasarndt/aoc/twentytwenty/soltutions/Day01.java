@@ -16,14 +16,14 @@ public class Day01 {
         for (int first : els) {
             for (int second : els) {
                 if (second > first)
-                    continue;
+                    break;
 
                 if (first + second == 2020)
                     System.out.printf("PART ONE: %d + %d = 2020, Multiplied: %d\n", first, second, first * second);
 
                 for (int third : els) {
                     if (third > second)
-                        continue;
+                        break;
 
                     if (first + second + third == 2020)
                         System.out.printf("PART TWO: %d + %d + %d = 2020, Multiplied: %d\n",
