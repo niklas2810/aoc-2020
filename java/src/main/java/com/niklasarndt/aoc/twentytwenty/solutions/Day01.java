@@ -1,4 +1,4 @@
-package com.niklasarndt.aoc.twentytwenty.soltutions;
+package com.niklasarndt.aoc.twentytwenty.solutions;
 
 import com.niklasarndt.aoc.twentytwenty.Exercise;
 import com.niklasarndt.aoc.twentytwenty.Utils;
