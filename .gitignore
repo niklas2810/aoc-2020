@@ -1,3 +1,13 @@
-target
-.idea
-*.iml
+# Java
+
+java/target
+java/.idea
+java/*.iml
+
+# CPP
+
+cpp/.vs
+cpp/*.user
+cpp/Debug
+cpp/Release
+cpp/x64
