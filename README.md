@@ -22,3 +22,13 @@ You can execute one of the build scripts as well.
 1. Install Visual Studio.
 2. Open the `.sln` file in the cpp directory.
 3. Build and run the project.
+
+
+## Solved Puzzles
+
+- _Puzzle solved in this language:_ ✔️
+- _Puzzle **not** solved in this language:_ ❌
+
+Puzzle Day / Name | Java | C++
+--- | --- | ---
+Day 01 : Report Repair | ✔️ | ✔️
