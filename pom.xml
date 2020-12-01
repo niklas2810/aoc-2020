@@ -7,18 +7,17 @@
     <groupId>com.niklasarndt</groupId>
     <artifactId>aoc-2020</artifactId>
     <version>1.0</version>
-
     <packaging>jar</packaging>
 
-    <name>MatseButler</name>
-    <description>A discord bot for my uni</description>
+    <name>AOC 2020</name>
+    <description>Solutions for this years Advent of Code</description>
     <url>https://github.com/niklas2810/aoc-2020</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <source.version>15</source.version>
         <target.version>15</target.version>
-        <mainClass>com.niklasarndt.aoc.2020.Bootstrap</mainClass>
+        <mainClass>com.niklasarndt.aoc.twentytwenty.Bootstrap</mainClass>
 
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>dd-MM-yyyy HH:mm z</maven.build.timestamp.format>
