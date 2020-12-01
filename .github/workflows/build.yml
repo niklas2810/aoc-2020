@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'java/**'
+      - '.github/**'
   workflow_dispatch:
 
 defaults:
@@ -15,7 +16,6 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
 
     steps:
       - name: ⏬ Checkout code
