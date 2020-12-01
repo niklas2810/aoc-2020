@@ -11,20 +11,25 @@ public class Day01 {
 
     public Day01() {
         List<Integer> els = Utils.readResource("day01.txt").stream()
-                .map(Integer::valueOf).collect(Collectors.toList());
+                .map(Integer::valueOf).sorted().collect(Collectors.toList());
 
-        System.out.println("PART ONE:\n\n");
-        //Part One
-        els.forEach(first -> els.forEach(second -> {
-            if (first + second == 2020)
-                System.out.printf("%d + %d = 2020, Multiplied: %d\n", first, second, first * second);
-        }));
+        for (int first : els) {
+            for (int second : els) {
+                if (second > first)
+                    continue;
 
-        System.out.println("\n\n\nPART TWO: ");
-        //Part Two
-        els.forEach(first -> els.forEach(second -> els.forEach(third -> {
-            if (first + second + third == 2020)
-                System.out.printf("%d + %d + %d = 2020, Multiplied: %d\n", first, second, third, first * second * third);
-        })));
+                if (first + second == 2020)
+                    System.out.printf("PART ONE: %d + %d = 2020, Multiplied: %d\n", first, second, first * second);
+
+                for (int third : els) {
+                    if (third > second)
+                        continue;
+
+                    if (first + second + third == 2020)
+                        System.out.printf("PART TWO: %d + %d + %d = 2020, Multiplied: %d\n",
+                                first, second, third, first * second * third);
+                }
+            }
+        }
     }
 }
