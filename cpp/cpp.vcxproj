@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\aoc-cpp\AOC2020\AOC2020\day01.cpp" />
-    <ClCompile Include="..\..\aoc-cpp\AOC2020\AOC2020\main.cpp" />
-    <ClCompile Include="..\..\aoc-cpp\AOC2020\AOC2020\parsing.cpp" />
+    <ClCompile Include="day01.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="parsing.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\aoc-cpp\AOC2020\AOC2020\day01.h" />
-    <ClInclude Include="..\..\aoc-cpp\AOC2020\AOC2020\parsing.h" />
+    <ClInclude Include="day01.h" />
+    <ClInclude Include="parsing.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
