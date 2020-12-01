@@ -5,14 +5,14 @@ name: Build using Maven
 on:
   push:
     paths:
-      - 'src/**'
-      - '**.xml'
-      - '**.yml'
+      - 'java/**'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./java
 
     steps:
       - name: ⏬ Checkout code
