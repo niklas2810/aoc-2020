@@ -10,12 +10,14 @@ All of my solutions will be **written in Java and/or C++**. In case there are an
 
 ## Setup Instructions
 
+First off, clone the project: `git clone https://github.com/niklas2810/aoc-2020.git`
+
 **Java:**
 
-1. Make sure you have [Maven](https://maven.apache.org/download.cgi) installed and added to your PATH. You can test this by typing `mvn -v` into your terminal.
-2. Clone this repository: `git clone https://github.com/niklas2810/aoc-2020.git`
-3. Open it up in the IDE of your choice (I'm using IntelliJ) and run it! Alternatively, build it from your terminal via `mvn package`. You will find an executable named `aoc-2020-1.0-shaded.jar` in the `target` directory.
-You can execute one of the build scripts as well.
+1. Make sure you have [Maven](https://maven.apache.org/download.cgi) and [Java](https://adoptopenjdk.net) (>= v14) installed and added to your PATH. You can test this by typing `mvn -version` and `java -version` into your terminal.
+2. Open it up in the IDE of your choice (I'm using IntelliJ) and run it! 
+3. Alternatively, build it from your terminal via `mvn package`. You will find an executable named `aoc-2020-1.0-shaded.jar` in the `target` directory.
+4. You can execute one of the build scripts as well.
 
 **CPP:**
 
