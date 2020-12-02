@@ -1,0 +1,24 @@
+name: Build C++ Code
+
+on:
+  push:
+    paths:
+      - 'cpp/**'
+      - '.github/**'
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: ./cpp   
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⏬ Checkout code
+        uses: actions/checkout@v2
+      - name: ⚙️ Set up Compiler
+        run: sudo apt-get install build-essential -y
+      - name: 🧪 Run Build
+        run: bash compile.sh
