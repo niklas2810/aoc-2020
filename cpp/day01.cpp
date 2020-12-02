@@ -1,26 +1,9 @@
-
-#include <fstream>
-#include <string>
-#include <vector>
 #include <iostream>
 #include <algorithm>
 #include <numeric>
 #include <chrono>
 
-using namespace std;
-
-vector<string> readFileAsLines(const string& filename)
-{
-  ifstream infile{ filename };
-  string line;
-
-  vector<string> result;
-
-  while (getline(infile, line))
-    result.push_back(line);
-
-  return result;
-}
+#include "parsing.h"
 
 int main()
 {
