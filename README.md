@@ -1,6 +1,8 @@
 # Advent of Code 2020
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/niklas2810/aoc-2020/Build%20using%20Maven?logo=github&style=for-the-badge&label=Java%20Build)
+![GitHub Workflow Status (Java)](https://img.shields.io/github/workflow/status/niklas2810/aoc-2020/Build%20using%20Maven?logo=github&style=for-the-badge&label=Java%20Build)
+![GitHub Workflow Status (C++)](https://img.shields.io/github/workflow/status/niklas2810/aoc-2020/Build%20C++%20Code?label=C%2B%2B%20Build&logo=github&style=for-the-badge)
+
 
 Hey there! In this repository, you will be able to find my solutions
 for this years' [Advent of Code](https://adventofcode.com).
