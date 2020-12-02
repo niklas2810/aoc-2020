@@ -37,7 +37,7 @@ First off, clone the project: `git clone https://github.com/niklas2810/aoc-2020.
 Puzzle Day / Name | Java | C++
 --- | --- | ---
 Day 01 : Report Repair | ✔️ | ✔️
-Day 02 : Password Philosophy | ✔️ | ❔
+Day 02 : Password Philosophy | ✔️ | ✔️
 Day 03 : ??? | ❔ | ❔
 Day 04 : ??? | ❔ | ❔
 Day 05 : ??? | ❔ | ❔
