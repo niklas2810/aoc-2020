@@ -15,15 +15,15 @@ First off, clone the project: `git clone https://github.com/niklas2810/aoc-2020.
 **Java:**
 
 1. Make sure you have [Maven](https://maven.apache.org/download.cgi) and [Java](https://adoptopenjdk.net) (>= v14) installed and added to your PATH. You can test this by typing `mvn -version` and `java -version` into your terminal.
-2. Open it up in the IDE of your choice (I'm using IntelliJ) and run it! 
+2. Open the java directory in the IDE of your choice (I'm using IntelliJ) and run it! 
 3. Alternatively, build it from your terminal via `mvn package`. You will find an executable named `aoc-2020-1.0-shaded.jar` in the `target` directory.
 4. You can execute one of the build scripts as well.
 
 **CPP:**
 
-1. Install Visual Studio.
-2. Open the `.sln` file in the cpp directory.
-3. Build and run the project.
+1. Install Visual Studio Code and a g++ Distribution (if you are using Windows, you can run the project using WSL, too!).
+2. Build the executable from a specific day: `g++ day<num>.cpp`.
+3. Execute the file!
 
 
 ## Solved Puzzles

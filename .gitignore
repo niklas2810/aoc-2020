@@ -6,8 +6,8 @@ java/*.iml
 
 # CPP
 
-cpp/.vs
-cpp/*.user
-cpp/Debug
-cpp/Release
-cpp/x64
+*.exe
+
+# VS Code
+
+.vscode

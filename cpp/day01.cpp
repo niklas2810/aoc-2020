@@ -1,7 +1,31 @@
-#include "day01.h"
 
-void solveDay01()
+#include <fstream>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <numeric>
+#include <chrono>
+
+using namespace std;
+
+vector<string> readFileAsLines(const string& filename)
 {
+  ifstream infile{ filename };
+  string line;
+
+  vector<string> result;
+
+  while (getline(infile, line))
+    result.push_back(line);
+
+  return result;
+}
+
+int main()
+{
+  auto start = chrono::high_resolution_clock::now();
+
   auto lines{ readFileAsLines("input/day01.txt") };
   vector<int> numbers{};
 
@@ -25,4 +49,9 @@ void solveDay01()
       }
     }
   }
+
+  auto end = chrono::high_resolution_clock::now();
+  auto duration = chrono::duration<double, milli>(end-start).count();
+
+  cout << "EXECUTION TIME: " << duration << "ms." << endl;
 }
