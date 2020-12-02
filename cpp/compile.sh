@@ -1,7 +1,10 @@
 #!/bin/bash
 
 for file in *.cpp; do
-    clang++ -Wall -Wextra -Werror "$file" -o "$file.out"
+    filename=$(basename -- "$file")
+    filename="${filename%.*}"
+    echo "$filename"
+    clang++ -Wall -Wextra -Werror "$file" -o "$filename.out"
     compile=$?
     if [ $compile != 0 ]; then
     echo "Failed to compile $file!"

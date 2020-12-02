@@ -7,7 +7,7 @@
 Hey there! In this repository, you will be able to find my solutions
 for this years' [Advent of Code](https://adventofcode.com).
 
-All of my solutions will be **written in Java and/or C++**. In case there are any questions regarding the project, feel free to [open an issue](https://github.com/niklas2810/aoc-2020/issues/new)!
+All of my solutions will be **written in Java and/or C++**. You can find an overview of which puzzle I've already solved [here](#solved-puzzles)! In case there are any questions regarding the project, feel free to [open an issue](https://github.com/niklas2810/aoc-2020/issues/new)!
 
 
 ## Setup Instructions
@@ -23,9 +23,10 @@ First off, clone the project: `git clone https://github.com/niklas2810/aoc-2020.
 
 **CPP:**
 
-1. Install Visual Studio Code and a g++ Distribution (if you are using Windows, you can run the project using WSL, too!).
-2. Build the executable from a specific day: `g++ day<num>.cpp`.
-3. Execute the file!
+1. Install [Visual Studio Code](https://code.visualstudio.com/) and **clang/g++** (if you are using Windows, you can run the project using WSL, too!). To install the build tools, run: `sudo apt-get install build-essential clang -y`
+2. (_Recommended_) You can execute the compile script in the cpp directory: `./compile.sh`. You will be able to find an executable for each day named `day<num>.out`. **This requires clang to be installed.**
+3. Alternatively, build the executable from a specific day: `clang++ day<num>.cpp`/`g++ day<num>.cpp`.
+4. Execute the file!
 
 
 ## Solved Puzzles
