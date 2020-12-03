@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class Day01 {
 
     public Day01() {
-        List<Integer> els = Utils.readResource("day01.txt").stream()
+        List<Integer> els = Utils.readFile("../input/day01.txt").stream()
                 .map(Integer::valueOf).sorted().collect(Collectors.toList());
 
         for (int first : els) {

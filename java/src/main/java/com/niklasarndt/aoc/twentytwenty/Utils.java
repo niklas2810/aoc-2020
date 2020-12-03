@@ -1,13 +1,17 @@
 package com.niklasarndt.aoc.twentytwenty;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.swing.*;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Utils {
+
+    private static final Logger logger = LoggerFactory.getLogger(Utils.class);
+
     /**
      * Parses a {@link String}, using a fallback value if parsing is not possible.
      *
@@ -67,11 +71,10 @@ public class Utils {
         return parseInt(readLine(prompt), Integer.MAX_VALUE);
     }
 
-    public static List<String> readResource(String resourcePath) {
+    private static List<String> readInputStream(InputStream stream) {
         List<String> res = new ArrayList<>();
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(
-                Utils.class.getClassLoader().getResourceAsStream(resourcePath)))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {
             String line;
 
             while ((line = reader.readLine()) != null) {
@@ -81,5 +84,18 @@ public class Utils {
             return res;
         }
         return res;
+    }
+
+    public static List<String> readResource(String resourcePath) {
+        return readInputStream(Utils.class.getClassLoader().getResourceAsStream(resourcePath));
+    }
+
+    public static List<String> readFile(String filepath) {
+        try (InputStream stream = new FileInputStream(new File(filepath))) {
+            return readInputStream(stream);
+        } catch (Exception e) {
+            logger.warn("File {} does not exist!", filepath, e);
+            return new ArrayList<>();
+        }
     }
 }

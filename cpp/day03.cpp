@@ -28,7 +28,7 @@ int main()
 {
   auto start = chrono::high_resolution_clock::now();
 
-  auto lines = readFileAsLines("input/day03.txt");
+  auto lines = readFileAsLines("../input/day03.txt");
 
   auto t0 = findTrees(lines, 1, 1);
   auto t1 = findTrees(lines, 3, 1);

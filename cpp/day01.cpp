@@ -9,7 +9,7 @@ int main()
 {
   auto start = chrono::high_resolution_clock::now();
 
-  auto lines{ readFileAsLines("input/day01.txt") };
+  auto lines{ readFileAsLines("../input/day01.txt") };
   vector<int> numbers{};
 
   transform(lines.begin(), lines.end(), back_inserter(numbers), [](const std::string& line)->int {return stoi(line); });

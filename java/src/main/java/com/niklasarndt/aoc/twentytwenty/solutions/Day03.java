@@ -9,7 +9,7 @@ import java.util.List;
 public class Day03 {
 
     public Day03() {
-        List<String> lines = Utils.readResource("day03.txt");
+        List<String> lines = Utils.readFile("../input/day03.txt");
 
         long t0 = findTrees(lines, 1, 1);
         long t1 = findTrees(lines, 3, 1);

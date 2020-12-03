@@ -52,7 +52,7 @@ int main()
 {
     auto start = chrono::high_resolution_clock::now();
 
-    vector<string> lines{readFileAsLines("input/day02.txt")};
+    vector<string> lines{readFileAsLines("../input/day02.txt")};
 
     int first = 0;
     int second = 0;

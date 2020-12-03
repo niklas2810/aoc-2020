@@ -9,7 +9,7 @@ import java.util.List;
 public class Day02 {
 
     public Day02() {
-        List<String> lines = Utils.readResource("day02.txt");
+        List<String> lines = Utils.readFile("../input/day02.txt");
         int first = 0;
         int second = 0;
         for (String line : lines) {
