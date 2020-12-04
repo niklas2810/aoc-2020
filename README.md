@@ -46,7 +46,7 @@ Puzzle Day / Name | Java | C++
 Day 01 : Report Repair | ✔️ | ✔️
 Day 02 : Password Philosophy | ✔️ | ✔️
 Day 03 : Toboggan Trajectory | ✔️ | ✔️
-Day 04 : ??? | ❔ | ❔
+Day 04 : Passport Processing | ✔️ | ❔
 Day 05 : ??? | ❔ | ❔
 Day 06 : ??? | ❔ | ❔
 Day 07 : ??? | ❔ | ❔
