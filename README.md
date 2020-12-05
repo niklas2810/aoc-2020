@@ -47,7 +47,7 @@ Day 01 : Report Repair | ✔️ | ✔️
 Day 02 : Password Philosophy | ✔️ | ✔️
 Day 03 : Toboggan Trajectory | ✔️ | ✔️
 Day 04 : Passport Processing | ✔️ | ❔
-Day 05 : ??? | ❔ | ❔
+Day 05 : Binary Boarding | ✔️ | ❔
 Day 06 : ??? | ❔ | ❔
 Day 07 : ??? | ❔ | ❔
 Day 08 : ??? | ❔ | ❔
