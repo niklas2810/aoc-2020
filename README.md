@@ -5,6 +5,7 @@
     <img alt="java build" src="https://img.shields.io/github/workflow/status/niklas2810/aoc-2020/Build%20using%20Maven?logo=github&style=for-the-badge&label=Java%20Build"/></a>
     <a href="https://github.com/niklas2810/aoc-2020/tree/main/cpp">
         <img alt="cpp build" src="https://img.shields.io/github/workflow/status/niklas2810/aoc-2020/Build%20C++%20Code?label=C%2B%2B%20Build&logo=github&style=for-the-badge"/></a>
+        <a href="https://app.codacy.com/gh/niklas2810/aoc-2020/dashboard"><img alt="codacy analysis" src="https://img.shields.io/codacy/grade/7c0e18e900264a2ea46674ffebd0328c?logo=codacy&style=for-the-badge"/></a>
     <br>
     <br>   
 </div>
