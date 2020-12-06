@@ -48,7 +48,7 @@ Day 02 : Password Philosophy | ✔️ | ✔️
 Day 03 : Toboggan Trajectory | ✔️ | ✔️
 Day 04 : Passport Processing | ✔️ | ❔
 Day 05 : Binary Boarding | ✔️ | ❔
-Day 06 : ??? | ❔ | ❔
+Day 06 : Custom Customs | ✔️ | ❔
 Day 07 : ??? | ❔ | ❔
 Day 08 : ??? | ❔ | ❔
 Day 09 : ??? | ❔ | ❔
