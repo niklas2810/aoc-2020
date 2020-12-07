@@ -50,7 +50,7 @@ Day 03 : Toboggan Trajectory | ✔️ | ✔️
 Day 04 : Passport Processing | ✔️ | ❔
 Day 05 : Binary Boarding | ✔️ | ❔
 Day 06 : Custom Customs | ✔️ | ❔
-Day 07 : ??? | ❔ | ❔
+Day 07 : Handy Haversacks | ✔️ | ❔
 Day 08 : ??? | ❔ | ❔
 Day 09 : ??? | ❔ | ❔
 Day 10 : ??? | ❔ | ❔
