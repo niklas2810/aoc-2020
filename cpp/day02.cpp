@@ -24,7 +24,7 @@ private:
     }
 
 public:
-    Policy(const string &raw)
+    explicit Policy(const string &raw)
     {
         int index_of_colon = raw.find(':');
         _password = raw.substr(index_of_colon+2);
