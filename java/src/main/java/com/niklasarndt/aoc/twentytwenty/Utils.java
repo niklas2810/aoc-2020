@@ -45,6 +45,22 @@ public class Utils {
     }
 
     /**
+     * Parses a {@link String}, using a fallback value if parsing is not possible.
+     *
+     * @param input        The input {@link String} which might be a valid long
+     * @param defaultValue The fallback value to use if the {@code input} is not a valid long.
+     * @return If the input is valid, the input as an {@link Long}, otherwise the fallback value
+     * will be returned.
+     */
+    public static long parseLong(String input, long defaultValue) {
+        try {
+            return Long.parseLong(input);
+        } catch (NumberFormatException e) {
+            return defaultValue;
+        }
+    }
+
+    /**
      * @return The text which should be displayed to the user.
      */
     public static String readLine(String prompt) {
