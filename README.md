@@ -53,7 +53,7 @@ Day 06 : Custom Customs | ✔️ | ❔
 Day 07 : Handy Haversacks | ✔️ | ❔
 Day 08 : Handheld Halting | ✔️ | ❔
 Day 09 : Encoding Error | ✔️ | ❔
-Day 10 : ??? | ❔ | ❔
+Day 10 : Adapter Array | ✔️ | ❔
 Day 11 : ??? | ❔ | ❔
 Day 12 : ??? | ❔ | ❔
 Day 13 : ??? | ❔ | ❔
