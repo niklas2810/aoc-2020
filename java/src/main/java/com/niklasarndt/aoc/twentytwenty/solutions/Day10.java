@@ -4,10 +4,8 @@ import com.niklasarndt.aoc.twentytwenty.Exercise;
 import com.niklasarndt.aoc.twentytwenty.Utils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 @Exercise(10)
 public class Day10 {
