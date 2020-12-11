@@ -1,8 +1,3 @@
-<style>
-table {
-    width:100%;
-}
-</style>
 <div style="width:100%;padding:0px;margin:0px" align="center">
     <h1>Advent of Code 2020</h1>
     <br>
