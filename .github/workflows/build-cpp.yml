@@ -19,6 +19,6 @@ jobs:
       - name: ⏬ Checkout code
         uses: actions/checkout@v2
       - name: ⚙️ Set up Compiler
-        run: sudo apt-get install build-essential clang -y
+        run: sudo apt-get install build-essential clang lld -y
       - name: 🧪 Run Build
         run: bash compile.sh

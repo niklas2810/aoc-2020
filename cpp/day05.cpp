@@ -30,11 +30,13 @@ int parseTicket(const string &data)
   int row{performShiftOps(rowString, 'B')};
   int col{performShiftOps(colString, 'R')};
 
-  return row*8+col;
+  return row * 8 + col;
 }
 
 int main()
 {
+  int p1{}, p2{};
+
   auto start = chrono::high_resolution_clock::now();
 
   vector<string> input{readFileAsLines("../input/day05.txt")};
@@ -51,11 +53,13 @@ int main()
 
   int min{ids[0]};
   int max{ids[ids.size() - 1]};
-  std::cout << "PART ONE: " << max << std::endl;
+  p1 = max;
 
-  for(int i = 1; i < (int)ids.size(); ++i) {
-    if(ids[i] != min+i) {
-      cout << "PART TWO: " << min+i << endl;
+  for (int i = 1; i < (int)ids.size(); ++i)
+  {
+    if (ids[i] != min + i)
+    {
+      p2 = min + i;
       break;
     }
   }
@@ -63,5 +67,7 @@ int main()
   auto end = chrono::high_resolution_clock::now();
   auto duration = chrono::duration<double, milli>(end - start).count();
 
+  cout << "PART ONE: " << p1 << endl;
+  cout << "PART TWO: " << p2 << endl;
   cout << "EXECUTION TIME: " << duration << "ms." << endl;
 }
