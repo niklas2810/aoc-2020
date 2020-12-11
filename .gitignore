@@ -13,7 +13,7 @@ java/*.iml
 *.exe
 *.out
 
-cpp/build
+build/
 cpp/CMakeFiles
 cpp/CMakeCache.txt
 cpp/Makefile
