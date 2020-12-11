@@ -27,7 +27,7 @@ public:
     explicit Policy(const string &raw)
     {
         int index_of_colon = raw.find(':');
-        _password = raw.substr(index_of_colon+2);
+        _password = raw.substr(index_of_colon + 2);
         _c = raw.at(index_of_colon - 1);
 
         int index_of_dash = raw.find('-');
@@ -50,27 +50,25 @@ public:
 
 int main()
 {
+    int p1{}, p2{};
     auto start = chrono::high_resolution_clock::now();
 
     vector<string> lines{readFileAsLines("../input/day02.txt")};
-
-    int first = 0;
-    int second = 0;
 
     for (const auto &line : lines)
     {
         Policy p{line};
         if (p.matchesFirstPolicy())
-            ++first;
+            ++p1;
 
         if (p.matchesSecondPolicy())
-            ++second;
+            ++p2;
     }
-
-    cout << "PART ONE: " << first << endl << "PART TWO: " << second << endl;
 
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration<double, milli>(end - start).count();
 
+    cout << "PART ONE: " << p1 << endl;
+    cout << "PART TWO: " << p2 << endl;
     cout << "EXECUTION TIME: " << duration << "ms." << endl;
 }

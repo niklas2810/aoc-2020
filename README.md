@@ -47,14 +47,14 @@ Puzzle Day / Name | Java | C++
 Day 01 : Report Repair | ✔️ | ✔️
 Day 02 : Password Philosophy | ✔️ | ✔️
 Day 03 : Toboggan Trajectory | ✔️ | ✔️
-Day 04 : Passport Processing | ✔️ | ❔
-Day 05 : Binary Boarding | ✔️ | ❔
+Day 04 : Passport Processing | ✔️ | ❌
+Day 05 : Binary Boarding | ✔️ | ✔️
 Day 06 : Custom Customs | ✔️ | ❔
 Day 07 : Handy Haversacks | ✔️ | ❔
 Day 08 : Handheld Halting | ✔️ | ❔
 Day 09 : Encoding Error | ✔️ | ❔
 Day 10 : Adapter Array | ✔️ | ❔
-Day 11 : ??? | ❔ | ❔
+Day 11 : Seating System | ✔️ | ❔
 Day 12 : ??? | ❔ | ❔
 Day 13 : ??? | ❔ | ❔
 Day 14 : ??? | ❔ | ❔
@@ -70,3 +70,6 @@ Day 22 : ??? | ❔ | ❔
 Day 23 : ??? | ❔ | ❔
 Day 24 : ??? | ❔ | ❔
 Day 25 : ??? | ❔ | ❔
+
+
+_I didn't solve Day 04 in C++ because the verification process is not complex, but rather tedious._ 

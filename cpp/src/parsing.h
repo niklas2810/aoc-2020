@@ -4,9 +4,14 @@
 
 using namespace std;
 
-vector<string> readFileAsLines(const string& filename)
+vector<string> readFileAsLines(const string &filename)
 {
-  ifstream infile{ filename };
+  ifstream infile{filename};
+  if (!infile)
+  {
+    cout << "ERROR: File \"" << filename << "\" not found!\n";
+    exit(EXIT_FAILURE);
+  }
   string line;
 
   vector<string> result;

@@ -23,7 +23,7 @@ public class Day10 {
 
         System.out.println("PART ONE: " + ones*threes);
 
-        long found = partTwo(0, new long[high + 1], high);
+        long found = partTwo(0, new long[high], high);
         System.out.println("PART TWO: " + found);
 
     }
