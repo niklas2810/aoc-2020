@@ -8,11 +8,10 @@ import java.util.List;
 @Exercise(11)
 public class Day11 {
 
-    Status[][] seats;
-    byte[][] neighborCache;
-
-    int width;
-    int height;
+    private final Status[][] seats;
+    private final int width;
+    private final int height;
+    private final byte[][] neighborCache;
 
 
     public Day11() {
@@ -31,8 +30,6 @@ public class Day11 {
                 seats[y][x] = c == '.' ? Status.FLOOR : (c == 'L') ? Status.FREE : Status.OCCUPIED;
             }
         }
-
-        resetNeighborCache();
 
         while (true) {
             if(simulateIteration(false) == 0)
@@ -149,8 +146,6 @@ public class Day11 {
     }
 
     private void resetNeighborCache() {
-        neighborCache = new byte[height][width];
-
         for (int y = 0; y < height; ++y)
             for (int x = 0; x < width; ++x)
                 neighborCache[y][x] = 0;
