@@ -73,3 +73,9 @@ Day 25 : ??? | ❔ | ❔
 
 
 _I didn't solve Day 04 in C++ because the verification process is not complex, but rather tedious._ 
+
+<style>
+table {
+    width:100%;
+}
+</style>
