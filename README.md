@@ -70,3 +70,6 @@ Day 22 : ??? | ❔ | ❔
 Day 23 : ??? | ❔ | ❔
 Day 24 : ??? | ❔ | ❔
 Day 25 : ??? | ❔ | ❔
+
+
+_I didn't solve Day 04 in C++ because the verification process is not complex, but rather tedious._ 
