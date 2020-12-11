@@ -1,3 +1,7 @@
+#Input files
+
+**-example.txt
+
 # Java
 
 java/target
@@ -8,6 +12,8 @@ java/*.iml
 
 *.exe
 *.out
+
+cpp/build
 
 # VS Code
 

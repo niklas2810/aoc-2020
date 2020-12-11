@@ -1,5 +1,9 @@
 {
     "cmake.debugConfig": {
         "cwd": "${workspaceFolder}"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "chrono": "cpp"
     }
 }

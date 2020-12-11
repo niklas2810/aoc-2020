@@ -12,7 +12,7 @@ int main()
 
   auto lines{readFileAsLines("../input/day01.txt")};
   vector<int> numbers{};
-
+  
   transform(lines.begin(), lines.end(), back_inserter(numbers), [](const std::string &line) -> int { return stoi(line); });
 
   sort(numbers.begin(), numbers.end());
