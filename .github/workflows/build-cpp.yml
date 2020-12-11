@@ -6,10 +6,11 @@ on:
       - 'cpp/**'
       - '.github/**'
   workflow_dispatch:
+  pull_request:
 
 defaults:
   run:
-    working-directory: ./cpp   
+    working-directory: ./cpp
 
 jobs:
   build:
@@ -19,6 +20,6 @@ jobs:
       - name: ⏬ Checkout code
         uses: actions/checkout@v2
       - name: ⚙️ Set up Compiler
-        run: sudo apt-get install build-essential clang lld -y
+        run: sudo apt-get install build-essential clang lld cmake ninja-build -y
       - name: 🧪 Run Build
-        run: bash compile.sh
+        run: mkdir build && cd build && cmake -GNinja .. && cmake --build .
