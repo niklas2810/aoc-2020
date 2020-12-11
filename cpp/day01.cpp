@@ -7,34 +7,41 @@
 
 int main()
 {
+  int p1{}, p2{};
   auto start = chrono::high_resolution_clock::now();
 
-  auto lines{ readFileAsLines("../input/day01.txt") };
+  auto lines{readFileAsLines("../input/day01.txt")};
   vector<int> numbers{};
 
-  transform(lines.begin(), lines.end(), back_inserter(numbers), [](const std::string& line)->int {return stoi(line); });
+  transform(lines.begin(), lines.end(), back_inserter(numbers), [](const std::string &line) -> int { return stoi(line); });
 
   sort(numbers.begin(), numbers.end());
 
-  for (int first : numbers) {
-    for (int second : numbers) {
-      if (second > first) break;
+  for (int first : numbers)
+  {
+    for (int second : numbers)
+    {
+      if (second > first)
+        break;
 
       if (first + second == 2020)
-        cout << "PART ONE: " << first << " + " << second << " = 2020, Multiplied: " << (first * second) << endl;
+        p1 = (first * second);
 
-      for (int third : numbers) {
-        if (third > second) break;
+      for (int third : numbers)
+      {
+        if (third > second)
+          break;
 
         if (first + second + third == 2020)
-          cout << "PART TWO: " << first << " + " << second << " + "
-          << third << " = 2020, Multiplied: " << (first * second * third) << endl;
+          p2 = (first * second * third);
       }
     }
   }
 
   auto end = chrono::high_resolution_clock::now();
-  auto duration = chrono::duration<double, milli>(end-start).count();
+  auto duration = chrono::duration<double, milli>(end - start).count();
 
+  cout << "PART ONE: " << p1 << endl;
+  cout << "PART TWO: " << p2 << endl;
   cout << "EXECUTION TIME: " << duration << "ms." << endl;
 }
