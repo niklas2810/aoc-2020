@@ -3,8 +3,7 @@ package com.niklasarndt.aoc.twentytwenty.solutions;
 import com.niklasarndt.aoc.twentytwenty.Exercise;
 import com.niklasarndt.aoc.twentytwenty.Utils;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
-import java.awt.Point;
+import java.awt.*;
 import java.util.List;
 
 @Exercise(12)
@@ -79,6 +78,10 @@ public class Day12 {
             return new WaypointPosition(new Point(wpx, wpy), boat);
         }
 
+        private WaypointPosition moveShipForward(int times) {
+            return new WaypointPosition(waypoint, new Point(boat.x+(waypoint.x*times), boat.y+(waypoint.y*times)));
+        }
+
         public WaypointPosition performAction(String line) {
             char command = line.trim().charAt(0);
             int amount = Utils.parseInt(line.trim().substring(1), -1);
@@ -90,13 +93,9 @@ public class Day12 {
                 default -> new WaypointPosition(Direction.byLetter(command).move(waypoint, amount), boat);
             };
         }
-
-        private WaypointPosition moveShipForward(int times) {
-            return new WaypointPosition(waypoint, new Point(boat.x+(waypoint.x*times), boat.y+(waypoint.y*times)));
-        }
     }
 
-    enum Direction {
+    private enum Direction {
         NORTH, EAST, SOUTH, WEST;
 
 
@@ -110,7 +109,7 @@ public class Day12 {
             };
         }
 
-        Direction rotate(int degrees) {
+        public Direction rotate(int degrees) {
             if (degrees == 0)
                 return this;
             if (degrees == 90)
