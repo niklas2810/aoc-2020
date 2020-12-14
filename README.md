@@ -56,7 +56,7 @@ Day 09 : Encoding Error | ✔️ | ❔
 Day 10 : Adapter Array | ✔️ | ❔
 Day 11 : Seating System | ✔️ | ❔
 Day 12 : Rain Risk | ✔️ | ❔
-Day 13 : ??? | ❔ | ❔
+Day 13 : Shuttle Search | ✔️ | ❔
 Day 14 : ??? | ❔ | ❔
 Day 15 : ??? | ❔ | ❔
 Day 16 : ??? | ❔ | ❔
